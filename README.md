@@ -33,7 +33,7 @@
 ### 一键安装
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/pmjorn/shell/main/proxy.sh | sh
+curl -fsSL https://raw.githubusercontent.com/pmjorn/shell/main/proxy.sh -o proxy.sh && chmod +x proxy.sh && ./proxy.sh
 ```
 
 ### 命令行模式
@@ -46,9 +46,12 @@ curl -fsSL https://raw.githubusercontent.com/pmjorn/shell/main/proxy.sh | sh
 ## 使用流程
 
 1. **安装内核** — 菜单 `[6]` → 选择 sing-box 或 mihomo
-2. **安装协议** — 菜单 `[1]` → 选择协议 → 指定端口 → 自动生成密钥
+2. **安装协议** — 菜单 `[1]` → 选择协议 → 指定端口（留空随机）→ 自动生成密钥
+   - VLESS 安装时可自定义伪装 SNI（默认 `www.speedtest.net`）
 3. **查看节点** — 菜单 `[4]` → 输出 URI，导入客户端
-4. **修改配置** — 菜单 `[2]` → 改端口 / 重新生成密钥
+4. **修改配置** — 菜单 `[2]` → 可改端口、重新生成密钥
+   - SS / Trojan / AnyTLS / Hysteria2：改端口、重新生成密码
+   - VLESS：改端口、改 SNI、重新生成 UUID、重新生成 Reality 密钥对
 5. **切换内核** — 菜单 `[6]` → sing-box ↔ mihomo，可同时运行
 
 ## 架构
