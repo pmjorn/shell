@@ -102,7 +102,7 @@ curl -fsSL https://raw.githubusercontent.com/pmjorn/shell/main/proxy.sh -o proxy
 - 内核安装 / 卸载 / 切换（完全删除，零残留）
 - 协议安装 / 修改 / 卸载（自动备份 + 失败回滚）
 - install-all 一键部署 5 协议（随机端口 + 自动生成密钥）
-- 节点 URI 输出（`ss://` / `trojan://` / `vless://` / `anytls://` / `hysteria2://`）
+- 节点 URI 输出（`shadowsocks://` / `trojan://` / `vless://` / `anytls://` / `hysteria2://`）
 - 日志轮转（logrotate）
 - 开机自启（OpenRC rc-update）
 - 并发锁保护（`/var/run/proxy.sh.lock`）
