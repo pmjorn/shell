@@ -33,8 +33,7 @@
 ### 一键安装
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/pmjorn/shell/main/proxy.sh -o proxy.sh
-chmod +x proxy.sh && ./proxy.sh
+curl -fsSL https://raw.githubusercontent.com/pmjorn/shell/main/proxy.sh | sh
 ```
 
 ### 命令行模式
@@ -46,17 +45,11 @@ chmod +x proxy.sh && ./proxy.sh
 
 ## 使用流程
 
-```
-┌─────────────────────────────────────────────┐
-│  主菜单                                      │
-│  [1] 安装协议   →  选择协议 → 指定端口        │
-│  [2] 修改配置   →  改端口 / 重新生成密钥      │
-│  [3] 卸载协议                                 │
-│  [4] 查看节点   →  输出 URI，导入客户端       │
-│  [6] 安装 / 切换内核                         │
-│      → sing-box ↔ mihomo，可同时运行         │
-└─────────────────────────────────────────────┘
-```
+1. **安装内核** — 菜单 `[6]` → 选择 sing-box 或 mihomo
+2. **安装协议** — 菜单 `[1]` → 选择协议 → 指定端口 → 自动生成密钥
+3. **查看节点** — 菜单 `[4]` → 输出 URI，导入客户端
+4. **修改配置** — 菜单 `[2]` → 改端口 / 重新生成密钥
+5. **切换内核** — 菜单 `[6]` → sing-box ↔ mihomo，可同时运行
 
 ## 架构
 
